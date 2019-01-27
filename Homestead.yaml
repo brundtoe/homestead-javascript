@@ -1,4 +1,4 @@
-ip: 192.168.10.10
+ip: 192.168.10.15
 memory: 2048
 cpus: 1
 provider: virtualbox
@@ -6,14 +6,38 @@ authorize: ~/.ssh/id_rsa.pub
 keys:
     - ~/.ssh/id_rsa
 folders:
-    -
-        map: /home/bent/HomeBox/javascript
-        to: /home/vagrant/code
+    - map: /home/bent/sourcecode/javascript/jstraining/web
+      to:  /home/vagrant/jstraining/web
+    - map: /home/bent/sourcecode/javascript/imgploadr
+      to:  /home/vagrant/imgploadr
+    - map: /home/bent/sourcecode/javascript/mongodemo
+      to:  /home/vagrant/mongodemo
+    - map: /home/bent/sourcecode/javascript/nodedemo
+      to:  /home/vagrant/nodedemo
+
 sites:
-    -
-        map: homestead.test
-        to: /home/vagrant/code/public
+    - map: jstraining.test
+      to: /home/vagrant/jstraining/web/public
+      php: "7.2"
+    - map: imgploadr.test
+      to: /home/vagrant/imgploadr
+      php: "7.2"
+    - map: mongodemo.test
+      to: /home/vagrant/mongodemo
+      php: "7.2"
+    - map: nodedemo.test
+      to: /home/vagrant/nodedemo
+      php: "7.2"
+
+mongodb: true
+
 databases:
     - homestead
+    - bookstore
+    - mystore
+
 name: javascript
+
 hostname: javascript
+
+
