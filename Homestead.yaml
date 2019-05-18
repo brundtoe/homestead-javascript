@@ -6,13 +6,13 @@ authorize: ~/.ssh/id_rsa.pub
 keys:
     - ~/.ssh/id_rsa
 folders:
-    - map: /home/bent/sourcecode/javascript/jstraining/web
+    - map: /home/projects/sourcecode/javascript/jstraining/web
       to:  /home/vagrant/jstraining/web
-    - map: /home/bent/sourcecode/javascript/imgploadr
+    - map: /home/projects/sourcecode/javascript/imgploadr
       to:  /home/vagrant/imgploadr
-    - map: /home/bent/sourcecode/javascript/mongodemo
+    - map: /home/projects/sourcecode/javascript/mongodemo
       to:  /home/vagrant/mongodemo
-    - map: /home/bent/sourcecode/javascript/nodedemo
+    - map: /home/projects/sourcecode/javascript/nodedemo
       to:  /home/vagrant/nodedemo
 
 sites:
