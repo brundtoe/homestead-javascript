@@ -26,7 +26,8 @@ sites:
       to: /home/vagrant/mongodemo
       php: "7.2"
     - map: nodedemo.test
-      to: /home/vagrant/nodedemo
+      to:  3000
+      type: proxy
       php: "7.2"
 
 mongodb: true

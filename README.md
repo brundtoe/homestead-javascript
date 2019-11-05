@@ -26,3 +26,18 @@ Følgende JavaScript projekter er aktiveret i filen:
 - imgploadr
 
 Yderligere projekter kan tilføjes i Homestead.yaml.
+
+nodedemo er defineret som en proxy på port 3000
+
+IMPORTANT Homebox apps med javascript node app
+
+- map alle apps folders
+- definer en enkelt site eksempelvis nodedemo som en proxy port 3000
+- anfør php version, hvis php anvendes i en af anvendte apps
+- vagrant up && vagrant ssh
+- cd til appens mappe med package.json
+- npm start
+- http://nodedemo.test
+- nu er der adgang til den app hvis node server er startet
+- afbryd node appen
+-  skift til en anden app og start denne med npm start
