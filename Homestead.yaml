@@ -18,19 +18,21 @@ folders:
 sites:
     - map: jstraining.test
       to: /home/vagrant/jstraining/web/public
-      php: "7.2"
+      php: "7.3"
     - map: imgploadr.test
       to: /home/vagrant/imgploadr
-      php: "7.2"
+      php: "7.3"
     - map: mongodemo.test
       to: /home/vagrant/mongodemo
-      php: "7.2"
+      php: "7.3"
     - map: nodedemo.test
       to:  3000
       type: proxy
       php: "7.2"
 
-mongodb: true
+features:
+  - mongodb: true
+  - pm2: true
 
 databases:
     - homestead

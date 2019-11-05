@@ -4,6 +4,14 @@ Denne Homestead definition af en vagrant instans, anvendes af udvalgte JavaScrip
  
 Laravel anvendes ikke.
 
+## opdateringsstatus november 2019
+
+- opdateret til Homestead ^9.0
+- anvender laravel/homested box 8.2.1
+- php ændret til 7.3
+- nodedemo.test er nu en proxy 
+
+
 ## Etablering
 Denne defintion er oprettet som en lokal instans ved med composer at installere **laravel/homestead** 
 
