@@ -13,8 +13,8 @@ module.exports = {
     },
         {
             name: 'jsonserver',
-            cwd: '/home/vagrant/jstraining/web',
-            script: '/home/vagrant/jstraining/web/serverbookstore.js',
+            cwd: '/home/vagrant/jstraining/backend',
+            script: '/home/vagrant/jstraining/backend/serverbookstore.js',
             instances: 1,
             autorestart: true,
             watch: true,
