@@ -13,10 +13,8 @@ folders:
 
     - map: /home/projects/sourcecode/javascript/imgploadr
       to:  /home/vagrant/imgploadr
-    - map: /home/projects/sourcecode/javascript/mongodemo
-      to:  /home/vagrant/mongodemo
-    - map: /home/projects/sourcecode/javascript/nodedemo
-      to:  /home/vagrant/nodedemo
+    - map: /home/projects/sourcecode/javascript/mysqldemo
+      to:  /home/vagrant/mysqldemo
 
 sites:
     - map: jsdemo.test
