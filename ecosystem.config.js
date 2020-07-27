@@ -28,23 +28,13 @@ module.exports = {
             watch: true,
         },
         {
-            name: 'nodedemo',
-            cwd: '/home/vagrant/nodedemo',
-            script: '/home/vagrant/nodedemo/bin/www.js',
+            name: 'mysqldemo',
+            cwd: '/home/vagrant/mysqldemo',
+            script: '/home/vagrant/mysqldemo/bin/www.js',
             instances: 1,
             autorestart: true,
             watch: true,
         },
-        {
-            name: 'mongodemo',
-            cwd: '/home/vagrant/mongodemo',
-            script: '/home/vagrant/mongodemo/bin/www',
-            instances: 1,
-            autorestart: true,
-            watch: true,
-        }
-
-
 
     ]
 };
