@@ -19,18 +19,18 @@ Laravel anvendes ikke.
 
 ```
     cd /vagrant
-    pm2 start ecosystem.config.js --only nodedemo
+    pm2 start ecosystem.config.js --only mysqldemo
 ```
     
 når der skiftes så skal den aktive app standses
 
 ```
-    pm2 stop nodedemo
+    pm2 stop mysqldemo
 ```
 
-Apps der anvender port 3000 er nodedemo, imgploadr, mongodemo, jstraining
+Apps der anvender port 3000 er imgploadr, jstraining og mysqldemo
 
-appen jsonserver kører på port 3300 og kan køre sammen med øvrie apps.
+mysqldemo json-server på port 3300 er ikke implementeret
 
 monitering foregår med
 
@@ -54,26 +54,11 @@ Projektet forudsætter at vagrant boxen **laravel/homstead er installaret.
 
 Følgende JavaScript projekter er aktiveret i filen:
 
-- jstraining
-- nodedemo
+- jstraining-jasmine som jstraining
 - mongodemo
 - imgploadr
 
 Yderligere projekter kan tilføjes i Homestead.yaml.
 
-nodedemo er defineret som en proxy på port 3000
+Der er defineret en proxy jsdemo på port 3000
 
-IMPORTANT Homebox apps med javascript node app
-
-- map alle apps folders
-- definer en enkelt site eksempelvis nodedemo som en proxy port 3000
-- anfør php version, hvis php anvendes i en af anvendte apps
-- vagrant up && vagrant ssh
-- cd til appens mappe med package.json
-- npm start
-- http://nodedemo.test
-- nu er der adgang til den app hvis node server er startet
-- afbryd node appen
--  skift til en anden app og start denne med npm start
-
-## start 

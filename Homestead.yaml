@@ -6,10 +6,8 @@ authorize: ~/.ssh/id_rsa.pub
 keys:
     - ~/.ssh/id_rsa
 folders:
-    - map: /home/projects/sourcecode/javascript/jstraining/web
+    - map: /home/projects/sourcecode/javascript/jstraining-jasmine/web
       to:  /home/vagrant/jstraining/web
-    - map: /home/projects/sourcecode/javascript/jstraining/backend
-      to:  /home/vagrant/jstraining/backend
 
     - map: /home/projects/sourcecode/javascript/imgploadr
       to:  /home/vagrant/imgploadr
@@ -19,10 +17,6 @@ folders:
 sites:
     - map: jsdemo.test
       to:  3000
-      type: proxy
-
-    - map: bookstore.test
-      to:  3300
       type: proxy
 
 features:

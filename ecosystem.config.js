@@ -4,20 +4,12 @@
 module.exports = {
     apps: [{
         name: 'jstraining',
-        cwd: '/home/vagrant/jstraining/web',
+        cwd: '/home/vagrant/jstraining-jasmine/web',
         script: '/home/vagrant/jstraining/web/bin/www',
         instances: 1,
         autorestart: true,
         watch: true,
 
-    },
-        {
-            name: 'jsonserver',
-            cwd: '/home/vagrant/jstraining/backend',
-            script: '/home/vagrant/jstraining/backend/serverbookstore.js',
-            instances: 1,
-            autorestart: true,
-            watch: true,
         },
         {
             name: 'imgploadr',
