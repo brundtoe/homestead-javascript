@@ -22,12 +22,19 @@ module.exports = {
         {
             name: 'mysqldemo',
             cwd: '/home/vagrant/mysqldemo',
-            script: '/home/vagrant/mysqldemo/bin/www.js',
+            script: '/home/vagrant/mysqldemo/bin/www',
             instances: 1,
             autorestart: true,
             watch: true,
         },
-
+        {
+            name: 'jsonserver',
+            cwd: '/home/vagrant/mysqldemo',
+            script: 'npm run json-server',
+            instances: 1,
+            autorestart: true,
+            watch: true,
+        },
     ]
 };
 /**

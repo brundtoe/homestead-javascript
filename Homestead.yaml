@@ -19,6 +19,11 @@ sites:
       to:  3000
       type: proxy
 
+    - map: jsonserver.test
+      to:  3300
+      type: proxy
+
+      
 features:
   - mongodb: true
   - pm2: true
