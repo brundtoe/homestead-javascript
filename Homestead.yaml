@@ -28,6 +28,10 @@ features:
   - mongodb: true
   - pm2: true
 
+variables:
+  - key: VAGRANT
+    value: 'true'
+  
 databases:
     - homestead
     - bookstore

@@ -4,12 +4,17 @@ Denne Homestead definition af en vagrant instans, anvendes af udvalgte JavaScrip
  
 Laravel anvendes ikke.
 
-## opdateringsstatus november 2019
+## opdateringsstatus oktober 2020
 
-- opdateret til Homestead ^9.0
-- anvender laravel/homested box 8.2.1
+- opdateret til Homestead ^10.0
+- anvender laravel/homested box 9.6.1
 - aktiveret pm2 
 - jsdemo.test er en proxy som anvendes af alle apps
+- jsonserver.test er en proxy på port 3300 til json-server
+
+scriptet after.sh installerer 
+
+    npm install -global json-server
 
 ### pm2 konfigurationsfil
 
@@ -30,7 +35,7 @@ når der skiftes så skal den aktive app standses
 
 Apps der anvender port 3000 er imgploadr, jstraining og mysqldemo
 
-mysqldemo json-server på port 3300 er ikke implementeret
+port 3300 anvendes mysqldemo controller authors.
 
 monitering foregår med
 
@@ -60,5 +65,5 @@ Følgende JavaScript projekter er aktiveret i filen:
 
 Yderligere projekter kan tilføjes i Homestead.yaml.
 
-Der er defineret en proxy jsdemo på port 3000
+Der er defineret en proxy jsdemo på port 3000 og jsonserver på port 3300
 

@@ -30,7 +30,7 @@ module.exports = {
         {
             name: 'jsonserver',
             cwd: '/home/vagrant/mysqldemo',
-            script: 'npm run json-server',
+            script: '/home/vagrant/mysqldemo/bin/json-server.sh',
             instances: 1,
             autorestart: true,
             watch: true,
