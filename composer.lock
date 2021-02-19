@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e72aa5a3174be2fbec43bd0f2e951be2",
+    "content-hash": "fd23de9af3b0be1a831c9da2a2a8cf93",
     "packages": [],
     "packages-dev": [
         {
             "name": "laravel/homestead",
-            "version": "v11.4.0",
+            "version": "v12.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "41a628deed9b601ee80689cf3ae0815195b5040f"
+                "reference": "a3ab5039275f385407e634ab1f5285fd1f7550b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/41a628deed9b601ee80689cf3ae0815195b5040f",
-                "reference": "41a628deed9b601ee80689cf3ae0815195b5040f",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/a3ab5039275f385407e634ab1f5285fd1f7550b7",
+                "reference": "a3ab5039275f385407e634ab1f5285fd1f7550b7",
                 "shasum": ""
             },
             "require": {
@@ -28,8 +28,8 @@
                 "symfony/yaml": "~5.1"
             },
             "require-dev": {
-                "dms/phpunit-arraysubset-asserts": "^0.2.0",
-                "phpunit/phpunit": "^9"
+                "dms/phpunit-arraysubset-asserts": "^0.2.1",
+                "phpunit/phpunit": "^9.5"
             },
             "bin": [
                 "bin/homestead"
@@ -51,11 +51,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "support": {
-                "issues": "https://github.com/laravel/homestead/issues",
-                "source": "https://github.com/laravel/homestead/tree/v11.4.0"
-            },
-            "time": "2020-11-24T17:59:52+00:00"
+            "time": "2021-02-02T14:37:40+00:00"
         },
         {
             "name": "psr/container",
@@ -104,10 +100,6 @@
                 "container-interop",
                 "psr"
             ],
-            "support": {
-                "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/master"
-            },
             "time": "2017-02-14T16:28:37+00:00"
         },
         {
@@ -255,9 +247,6 @@
             ],
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/master"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -882,9 +871,6 @@
                 "interoperability",
                 "standards"
             ],
-            "support": {
-                "source": "https://github.com/symfony/service-contracts/tree/master"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -1067,5 +1053,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }
