@@ -24,8 +24,8 @@ sites:
       type: proxy
 
       
-features:
-  - mysql
+feature:
+  - mysql8
   - mongodb: true
   - pm2: true
 
