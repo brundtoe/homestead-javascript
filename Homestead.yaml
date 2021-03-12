@@ -25,6 +25,7 @@ sites:
 
       
 features:
+  - mysql
   - mongodb: true
   - pm2: true
 
