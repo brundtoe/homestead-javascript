@@ -7,12 +7,12 @@ keys:
     - ~/.ssh/id_rsa
 folders:
     - map: /home/projects/sourcecode/javascript/jstraining-jasmine/web
-      to:  /home/vagrant/jstraining/web
+      to:  /home/vagrant/code/jstraining/web
 
     - map: /home/projects/sourcecode/javascript/imgploadr
-      to:  /home/vagrant/imgploadr
+      to:  /home/vagrant/code/imgploadr
     - map: /home/projects/sourcecode/javascript/mysqldemo
-      to:  /home/vagrant/mysqldemo
+      to:  /home/vagrant/code/mysqldemo
 
 sites:
     - map: jsdemo.test
